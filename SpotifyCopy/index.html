@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <main class="container-principal">
+      <h4 class="titulo">Playlist Hashtag</h4>
+      <img id="capa" alt="Capa do disco" />
+      <audio id="musica"></audio>
+      <section class="container-nomes">
+        <div class="song-info">
+          <div id="nome-musica"><strong>Nome da música</strong></div>
+          <div id="nome-banda">Nome da banda</div>
+        </div>
+        <button id="like" class="button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-heart"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+            />
+          </svg>
+        </button>
+      </section>
+      <section id="progress-container">
+        <div class="barra-progresso">
+          <div id="progresso-atual"></div>
+        </div>
+      </section>
+      <section class="container-button">
+        <button id="shuffle" class="button embaralhar">
+          <i class="bi bi-shuffle"></i>
+        </button>
+        <button id="previous" class="button voltar">
+          <i class="bi bi-skip-backward-fill"></i>
+        </button>
+        <button id="playPause" class="button tocar">
+          <i class="bi bi-play-circle-fill"></i>
+        </button>
+        <button id="next" class="button avançar">
+          <i class="bi bi-skip-forward-fill"></i>
+        </button>
+        <button id="repeat" class="button repetir">
+          <i class="bi bi-repeat"></i>
+        </button>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
